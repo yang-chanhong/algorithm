@@ -7,7 +7,7 @@ int main()
 {
     cout << "Hello world" << endl;
 
-    Sleep(3000);
+    Sleep(2000);
 
     return 0;
 }
