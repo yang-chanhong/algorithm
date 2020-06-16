@@ -1,13 +1,21 @@
 #include <iostream>
+#ifdef LINUXOS
+#include <unistd.h>
+#else
 #include <Windows.h>
-
+#endif
 using namespace std;
 
 int main()
 {
-    cout << "Hello world" << endl;
+#ifdef LINUXOS
+	cout << "LINUXOS" << endl;
+#else
+	cout << "Windows" << endl;
+#endif
+    //cout << "Hello world" << endl;
 
-    Sleep(2000);
+    sleep(2);
 
     return 0;
 }
