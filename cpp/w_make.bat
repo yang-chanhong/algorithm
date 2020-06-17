@@ -1,1 +1,1 @@
-make SRC=%1
+make SRC=%1 OSENV=WINDOWSOS
