@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <math.h>
 
 using namespace std;
 
@@ -15,31 +15,29 @@ int main(int argc, char** argv)
 	{
         int min = 10000;
         int max = 0;
-        int sum = 0;
-        int avg[10] = {0};
+        float sum = 0;
+		 int temp = 0;
         
         for(int i = 0; i < 10; i++)
         {
-            cin >> avg[i];
+            cin >> temp;
             
-            if(avg[i] < min)
+            if(temp < min)
             {
-                min = avg[i];
+                min = temp;
             }
             
-            if(avg[i] > max)
+            if(temp > max)
             {
-                max = avg[i];
+                max = temp;
             }
             
-            sum += avg[i];
+            sum += temp;
         }
         
-        sum = sum - min - max;
+    	sum = ((sum - min - max)/8.0);
         
-        
-        cout << min << " " << max << " " << sum << "\n";        
+		cout << "#" << test_case << " " << round(sum) << "\n";
 	}
 	return 0;
 }
-
