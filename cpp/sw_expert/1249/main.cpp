@@ -84,7 +84,7 @@ int main(int argc, char** argv)
 		dist[0][0] = 0;
 		Min_dist();
 		
-		cout << "#" << test_case << " " << dist[N-1][N-1];
+		cout << "#" << test_case << " " << dist[N-1][N-1] << "\n";
 		/*
 		for(int i = 0; i < N; i++)
 		{
