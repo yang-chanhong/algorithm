@@ -1,4 +1,6 @@
 #C:\MinGW\bin\g++.exe -g d:\ych\Git_algorithm\cpp\TestCode\helloworld.cpp -o d:\ych\Git_algorithm\cpp\TestCode\helloworld.exe
+#SRC=$1
+#OSENV=LINUXOS
 COMPILER=g++
 CFLAGS=
 TARGET_PATH=./sw_expert/$(SRC)/
